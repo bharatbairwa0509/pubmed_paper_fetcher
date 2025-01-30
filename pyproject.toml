@@ -1,0 +1,21 @@
+[project]
+name = "pubmed-paper-fetcher"
+version = "0.1.0"
+description = "a command line for fetching and filtering the public research paper from Pubmed"
+authors = [
+    {name = "Bharat"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+get-papers-list = "cli:main"
+
